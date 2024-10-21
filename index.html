@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salustino Massas</title>
+    <!-- icone da aba do navegador-->
+    <link rel="shortcut icon" href="./src/favicon/logo.jpg" type="image/x-icon">
+
+    <!-- estilo de desktop -->
+    <link rel="stylesheet" href="./src/css/global.css">
+
+    <!-- estilo de mobile -->
+     <link rel="stylesheet" href="./src/css/mobile.css"> 
+
+     <!-- java script -->
+     <script src="./src/js/script.js"></script>
+
+    <!-- Fonte utilizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <!-- logo -->
+     <img src="./src/favicon/logo.jpg" 
+     style=
+     "border-radius: 100px; 
+     height: 50px;
+     display: inline-flex;
+     " alt="Logo" class="logo">
+
+     <!--capa de fundo-->
+     
+
+     <!-- tilulo do site -->
+    <h1>Salustino Massas</h1>
+</header>
+
+<!-- Filtro de categorias -->
+<nav class="menu-categorias">
+    <button class="filter-btn" data-category="all">Todas</button>
+    <button class="filter-btn" data-category="Massas">Massas</button>
+    <button class="filter-btn" data-category="Secas">Massas Secas</button>
+    <button class="filter-btn" data-category="Promoção">Promoção da Semana</button>
+</nav>
+
+<!-- Container para os itens do cardápio -->
+<section id="menu" class="menu">
+    <!-- Exemplo de item de cardápio -->
+    <div class="menu-item" data-category="Massas">
+        <img src="src/image/lasanha massa artesanal.jpg" alt="Lasanha" class="menu-img">
+        <div class="menu-info">
+            <h2>Lasanha massa artesanal</h2>
+            <p>Delicie-se com nossa suculenta Lasanha, cuidadosamente confeccionada com massa artesanal fresca.</p>
+            <span class="menu-price">R$ 34,99</span>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Massas">
+        <img src="src/image/Macarrão fresco molho bolonhesa..jpg" alt="Macarrao" class="menu-img">
+        <div class="menu-info">
+            <h2>Macarrão fresco molho bolonhesa.</h2>
+            <p>Desfrute do nosso Macarrão Fettuccine fresco, meticulosamente preparado com massa artesanal.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 17,99</span>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Massas">
+        <img src="src/image/Nhoque de batata molho bechamel.jpg" alt="Tiramisu" class="menu-img">
+        <div class="menu-info">
+            <h2>Nhoque de batata molho bechamel</h2>
+            <p>Saboreie a delicadeza do nosso Nhoque de Batata, uma massa italiana genuína que derrete na boca.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 27,99</span>
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Promoção">
+        <img src="src/image/Lasanha massa artesanal ao molho bolonhesa 800gr.jpg" alt="Lasanha massa" class="menu-img">
+        <div class="menu-info">
+            <h2>Lasanha massa artesanal ao molho</h2>
+            <p>Desfrute da nossa Lasanha de Massa Artesanal ao Molho Bolonhesa com exuberantes 800gr.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 32,20</span>
+            <!--promoção-->
+            <span class="dish-card__price--original"><s style="font-size: 12px;">R$ 35,00</s></span>
+            <!--promoção-->
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Promoção">
+        <img src="src/image/rondelli.jpg" alt="Lasanha massa" class="menu-img">
+        <div class="menu-info">
+            <h2>Rondelli Presunto e Muçarela</h2>
+            <p>Desfrute do Rondelli de Presunto e Muçarela, meticulosamente preparado com uma massa artesana.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 34,30</span>
+            <!--promoção-->
+            <span class="dish-card__price--original"><s style="font-size: 12px;">R$ 35,00</s></span>
+            <!--promoção-->
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Promoção">
+        <img src="src/image/Nhoque de Batata ao molho bolonhesa. 750g.jpg" alt="" class="menu-img">
+        <div class="menu-info">
+            <h2>Nhoque de Batata ao molho bolonhesa. 750g</h2>
+            <p>Delicie-se com nosso Nhoque de Batata de fabricação caseira.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 34,65</span>
+            <!--promoção-->
+            <span class="dish-card__price--original"><s style="font-size: 12px;">R$ 36,00</s></span>
+            <!--promoção-->
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Massas">
+        <img src="src/image/Macarrão fresco de cenoura com molho Bolonhesa..jpg" alt="" class="menu-img">
+        <div class="menu-info">
+            <h2>Macarrão fresco de cenoura com molho Bolonhesa</h2>
+            <p>Delicie-se com nosso Nhoque de Batata de fabricação caseira.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 22,99</span>
+            <!--promoção-->
+            <span class="dish-card__price--original"><s style="font-size: 12px;"></s></span>
+            <!--promoção-->
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Promoção">
+        <img src="src/image/Lasanha.jpg" alt="" class="menu-img">
+        <div class="menu-info">
+            <h2>Lasanha</h2>
+            <p>Deliciosa Lasanha Artesanal, da categoria Massas Recheadas, com um peso generoso de 1 kg, recheada com presunto e queijo.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 40,50</span>
+            <!--promoção-->
+            <span class="dish-card__price--original"><s style="font-size: 12px;">45,00</s></span>
+            <!--promoção-->
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Secas">
+        <img src="src/image/massa fettuccine.jpg" alt="" class="menu-img">
+        <div class="menu-info">
+            <h2>Massa Fettuccine tradicional</h2>
+            <p>Massa artesanal feito a mão com farinha nobre, essa massa perfeita com diferentes molhos para o cozimento da sua casa.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 18,99</span>
+            <!--promoção-->
+            <span class="dish-card__price--original"><s style="font-size: 12px;"></s></span>
+            <!--promoção-->
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Secas">
+        <img src="src/image/Massa seca Fettuccine tradicional..jpg" alt="" class="menu-img">
+        <div class="menu-info">
+            <h2>Massa seca Fettuccine tradicional</h2>
+            <p>Apresentando a nossa Massa Artesanal Fettuccine, uma das melhores massas secas da região.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 19,99</span>
+            <!--promoção-->
+            <span class="dish-card__price--original"><s style="font-size: 12px;"></s></span>
+            <!--promoção-->
+        </div>
+    </div>
+
+    <div class="menu-item" data-category="Secas">
+        <img src="src/image/Massa seca Fettuccine de cenoura..jpg" alt="" class="menu-img">
+        <div class="menu-info">
+            <h2>Massa seca Fettuccine de cenoura</h2>
+            <p>A 'Massa Seca Fettuccine de Cenoura' é um deleite gourmet artesanal.</p>
+            <p>Server 1 pessoa</p>
+            <span class="menu-price">R$ 21,99</span>
+            <!--promoção-->
+            <span class="dish-card__price--original"><s style="font-size: 12px;"></s></span>
+            <!--promoção-->
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
