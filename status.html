@@ -25,16 +25,23 @@
         function atualizarEstadoLoja() {
             const agora = new Date();
             const hora = agora.getHours();
+            const minutos = agora.getMinutes();
             const mensagem = document.getElementById('mensagem');
 
-            // Horário de funcionamento: 18h às 22h
-            if (hora >= 18 && hora < 22) {
+            // Horário de funcionamento: 18:30h às 22:00h
+            if (hora >= 18 && minutos > 30 && hora < 22) {
+              
                 // Loja aberta
-                document.body.style.backgroundColor = '#32CD32'; // Verde
+                document.body.style.backgroundColor =
+                '#32CD32';
+                document.body.style.color = 'white';
+                // Verde
                 mensagem.textContent = "Loja Aberta!";
             } else {
                 // Loja fechada
-                document.body.style.backgroundColor = 'red'; // Vermelho
+                document.body.style.backgroundColor = 'red';
+                document.body.style.color = 'white';
+                // Vermelho
                 mensagem.textContent = "Loja Fechada!";
             }
         }
