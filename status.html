@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado da Loja</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+            text-align: center;
+            font-size: 9px;
+            font-family: sans-serif;
+        }
+        #mensagem {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div id="mensagem"></div>
+
+    <script>
+        function atualizarEstadoLoja() {
+            const agora = new Date();
+            const hora = agora.getHours();
+            const mensagem = document.getElementById('mensagem');
+
+            // Horário de funcionamento: 18h às 22h
+            if (hora >= 18 && hora < 22) {
+                // Loja aberta
+                document.body.style.backgroundColor = '#32CD32'; // Verde
+                mensagem.textContent = "Loja Aberta!";
+            } else {
+                // Loja fechada
+                document.body.style.backgroundColor = 'red'; // Vermelho
+                mensagem.textContent = "Loja Fechada!";
+            }
+        }
+
+        // Atualiza o estado ao carregar a página
+        atualizarEstadoLoja();
+
+        // Verifica o estado a cada 5 minutos
+        setInterval(atualizarEstadoLoja, 300000); // 300000 ms = 5 minutos
+    </script>
+</body>
+</html>

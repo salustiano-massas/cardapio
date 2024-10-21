@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+iframe{
+    border-radius: 20px;
+    border: none;
+    margin-block-start: 10px;
+    margin-left: 440px;
+    
+
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -22,9 +30,27 @@ header {
 h1 {
     font-size: 24px;
     color: #ffffff;
-    text-shadow: 0.1em 0.1em 0.2em black;
+    text-shadow: 0.1em 0.5em 0.5em black;
 }
 
+.hora{
+    text-shadow: 0.1em 0.5em 0.5em black;
+    color: white;
+}
+
+.fechado{
+    color: rgb(255, 255, 255);
+    background: red;
+    padding: 10px;
+    display: flex;
+    align-items: safe;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 750px;
+    margin-right: 750px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
 .menu-categorias {
     display: flex;
     justify-content: center;
@@ -106,3 +132,5 @@ body::-webkit-scrollbar {
     background: #ff6347;
     border-radius: 20px;
   }
+
+ 
